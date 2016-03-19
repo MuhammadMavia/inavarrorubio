@@ -169,12 +169,13 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
         .state('app', {
             url: "/app",
             templateUrl: "views/app.html",
+            data: {pageTitle: 'App Template'},
         })
         // Login
         .state('login', {
             url: "/login",
             templateUrl: "views/login.html",
-            data: {pageTitle: 'App Template'},
+            data: {pageTitle: 'Login Template'},
             controller: "LoginController",
             resolve: {
                 deps: ['$ocLazyLoad', function($ocLazyLoad) {
