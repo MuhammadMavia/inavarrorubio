@@ -11,6 +11,22 @@ var MetronicApp = angular.module("MetronicApp", [
     "firebase"
 ]);
 
+MetronicApp.run(function ($rootScope, $state) {
+    $rootScope.$on('$stateChangeStart',
+        function (event, toState, toParams, fromState, fromParams) {
+          console.log(fromState);
+            var firebaseToken = localStorage.getItem("firebase:session::ahead-guest");
+            if (toState.name.slice(0, toState.name.indexOf(".")) === "app" && !firebaseToken) {
+                event.preventDefault();
+                $state.go("login")
+            }
+            else if (toState.name === "login" && firebaseToken) {
+                event.preventDefault();
+                $state.go(fromState.name)
+            }
+        })
+    })
+
 
 /* Configure ocLazyLoader(refer: https://github.com/ocombe/ocLazyLoad) */
 MetronicApp.config(['$ocLazyLoadProvider', function($ocLazyLoadProvider) {

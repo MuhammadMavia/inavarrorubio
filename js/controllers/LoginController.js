@@ -1,4 +1,4 @@
-angular.module('MetronicApp').controller('LoginController', function($rootScope, $scope, $http, $timeout) {
+angular.module('MetronicApp').controller('LoginController', function($rootScope, $state, $scope, $http, $timeout) {
       var ref = new Firebase("https://ahead-guest.firebaseio.com/");
       console.log(ref);
 
@@ -10,6 +10,7 @@ angular.module('MetronicApp').controller('LoginController', function($rootScope,
           if (error) {
             console.log("Login Failed!", error);
           } else {
+            $state.go("app.dashboard")
             console.log("Authenticated successfully with payload:", authData);
           }
         });
