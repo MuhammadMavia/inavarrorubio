@@ -1,0 +1,112 @@
+<div class="page-sidebar navbar-collapse collapse">
+    <!-- BEGIN SIDEBAR MENU -->
+    <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+    <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+    <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+    <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+    <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+    <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" ng-class="{'page-sidebar-menu-closed': settings.layout.pageSidebarClosed}">
+        <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+        <li class="sidebar-search-wrapper">
+            <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+            <!-- DOC: Apply "sidebar-search-bordered" class the below search form to have bordered search box -->
+            <!-- DOC: Apply "sidebar-search-bordered sidebar-search-solid" class the below search form to have bordered & solid search box -->
+            <form class="sidebar-search sidebar-search-bordered" action="#" method="POST">
+                <a href="javascript:;" class="remove">
+                    <i class="icon-close"></i>
+                </a>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <span class="input-group-btn">
+                        <a href="javascript:;" class="btn submit">
+                            <i class="icon-magnifier"></i>
+                        </a>
+                    </span>
+                </div>
+            </form>
+            <!-- END RESPONSIVE QUICK SEARCH FORM -->
+        </li>
+        <li class="start nav-item">
+            <a href="#/app/dashboard">
+                <i class="icon-home"></i>
+                <span class="title"> Ahead Dashboard</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#/app/news">
+                <i class="icon-calendar"></i>
+                <span class="title"> Ahead News</span>
+            </a>
+        </li>
+        <!-- Este item de la lista lo dejo sin marcar para que pueda ver cómo se hace un desplegable
+        en este menú -->
+        <!-- <li class="nav-item">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-settings"></i>
+                <span class="title">AngularJS Features</span>
+                <span class="arrow"></span>
+            </a>
+            <ul class="sub-menu">
+                <li>
+                    <a href="#/ui_bootstrap.html">
+                        <i class="icon-puzzle"></i> UI Bootstrap</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/file_upload.html">
+                        <i class="icon-paper-clip"></i> File Upload</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/ui_select.html">
+                        <i class="icon-check"></i> UI Select</span>
+                    </a>
+                </li>
+            </ul>
+        </li> -->
+        <li class="nav-item">
+            <a href="#/app/generator">
+                <i class="icon-speedometer"></i>
+                <span class="title">Profile Generator</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#/app/savedprofiles">
+                <i class="icon-users"></i>
+                <span class="title">My saved profiles</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#/app/services">
+                <i class="icon-notebook"></i>
+                <span class="title">Ahead Services</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#/app/savedservices">
+                <i class="icon-list"></i>
+                <span class="title">My saved Services</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#/app/todo">
+                <i class="icon-check"></i>
+                <span class="title">Task & Todo</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#/app/contact">
+                <i class="icon-call-end"></i>
+                <span class="title">Contact</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#/app/faq">
+                <i class="icon-wrench"></i>
+                <span class="title">FAQ</span>
+            </a>
+        </li>
+    </ul>
+    <!-- END SIDEBAR MENU -->
+</div>

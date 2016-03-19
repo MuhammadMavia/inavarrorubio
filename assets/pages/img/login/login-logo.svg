@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="188px" height="31px" viewBox="0 0 188 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M0.5,30.5 L151.5,30.5" id="Line" stroke="#FFFFFF" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <text id="Ahead-Guest" sketch:type="MSTextLayer" font-family="Ubuntu" font-size="32" font-weight="420" letter-spacing="-1.33333313">
+            <tspan x="2.5" y="28" fill="#2B3643">Ahead</tspan>
+            <tspan x="90.7773343" y="28" letter-spacing="-1.42222202" fill="#000000"> </tspan>
+            <tspan x="96.8111123" y="28" letter-spacing="-1.42222202" fill="#53BB2D">Guest</tspan>
+        </text>
+        <text id="TM" sketch:type="MSTextLayer" font-family="Ubuntu" font-size="7" font-weight="420" fill="#2B3643">
+            <tspan x="176.25" y="9">TM</tspan>
+        </text>
+    </g>
+</svg>
