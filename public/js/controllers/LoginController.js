@@ -1,7 +1,5 @@
 angular.module('MetronicApp').controller('LoginController', function($rootScope, $state, $scope, $http, $timeout) {
       var ref = new Firebase("https://ahead-guest.firebaseio.com/");
-      console.log(ref);
-
       $scope.doLogin = function(user){
         ref.authWithPassword({
           email    : user.email,
